@@ -1,0 +1,55 @@
+/* Kundenfunk tablet presentation. Scoped to avoid altering the host website. */
+.wa-live-phone { display: flex; flex-direction: column; align-items: center; }
+.wa-phone.wa-tablet { box-sizing: border-box; width: min(1080px, 100%); max-width: 100%; aspect-ratio: 4 / 3; padding: 15px; border-radius: 36px; position: relative; overflow: hidden; background: #151517; border: 1px solid #707074; box-shadow: 0 28px 64px -24px #0009, inset 0 0 0 2px #29292b; overscroll-behavior-y: contain; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #111b21; }
+.wa-tablet .wa-island { position: absolute; z-index: 2; top: 5px; left: 50%; width: 6px; height: 6px; transform: translateX(-50%); border-radius: 50%; background: #09090b; box-shadow: inset 0 0 0 1px #353541; }
+.wa-tablet .wa-screen { box-sizing: border-box; width: 100%; height: 100%; min-height: 0; border-radius: 22px; overflow: hidden; display: flex; flex-direction: column; padding: 0; background: #f7f8fa; position: relative; }
+.wa-tablet .wa-statusbar { box-sizing: border-box; height: 30px; flex: 0 0 30px; display: flex; align-items: center; justify-content: space-between; padding: 0 22px; background: #f7f8fa; color: #151517; font: 600 11px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.wa-tablet [data-wa-date] { margin-left: 10px; }
+.wa-tablet .wa-sb-icons { display: flex; }
+.wa-tablet .wa-app { display: grid; grid-template-columns: 248px minmax(0, 1fr); flex: 1 1 auto; min-height: 0; }
+.wa-tablet .wa-channel-list { display: flex; flex-direction: column; min-width: 0; padding: 22px 12px 24px; border-right: 1px solid #e2e5e7; background: #fff; }
+.wa-tablet .wa-app-brand { padding: 0 12px; color: #1a9c50; font: 700 19px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: -.6px; }
+.wa-tablet .wa-sidebar-heading { margin: 35px 12px 22px; font-size: 27px; font-weight: 750; letter-spacing: -.9px; line-height: 1.1; }
+.wa-tablet .wa-sidebar-label { display: flex; align-items: center; gap: 8px; padding: 0 12px 13px; font-size: 13px; font-weight: 600; color: #606c72; }
+.wa-tablet svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.wa-tablet .wa-sidebar-label svg { width: 18px; height: 18px; }
+ .wa-tablet a.wa-channel-card { display: flex; align-items: center; gap: 10px; padding: 13px 11px; border-radius: 12px; background: #e7f8ed; color: #111b21; text-decoration: none; }
+ .wa-tablet a.wa-channel-card:hover { background: #dcf3e4; }
+ .wa-tablet a.wa-channel-card > span { min-width: 0; }
+ .wa-tablet a.wa-channel-card b { display: block; font: 650 13px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; overflow-wrap: anywhere; }
+ .wa-tablet a.wa-channel-card small { display: block; margin-top: 4px; font-size: 11px; color: #597369; line-height: 1.3; }
+.wa-tablet .wa-avatar { width: 39px; height: 39px; flex: 0 0 39px; object-fit: cover; border-radius: 50%; background: #f5f6f6; }
+.wa-tablet .wa-sidebar-note { margin: 24px 12px; color: #7b858b; font: 400 12px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+ .wa-tablet a.wa-sidebar-open { margin: auto 12px 0; color: #148044; font: 600 12px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-decoration: none; }
+ .wa-tablet a.wa-sidebar-open span { margin-left: 4px; }
+.wa-tablet .wa-conversation { display: flex; flex-direction: column; min-width: 0; min-height: 0; background: #efeae2; }
+.wa-tablet .wa-header { display: flex; flex: 0 0 auto; min-height: 72px; box-sizing: border-box; align-items: center; gap: 12px; padding: 12px 21px; background: #fafbfc; border-bottom: 1px solid #e2e5e7; }
+.wa-tablet .wa-htext { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 4px; line-height: 1.3; }
+.wa-tablet .wa-channel-name { font: 650 14px/1.3 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #111b21; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.wa-tablet .wa-followers { color: #748087; font-size: 11px; }
+ .wa-tablet a.wa-header-open { display: grid; place-items: center; flex: 0 0 34px; width: 34px; height: 34px; color: #148044; background: #edf1ee; border-radius: 50%; }
+ .wa-tablet a.wa-header-open svg { width: 16px; height: 16px; }
+.wa-tablet .wa-chat { box-sizing: border-box; display: block; flex: 1 1 0; min-width: 0; min-height: 0; width: 100%; padding: 0; border: 0; overflow-y: auto; overscroll-behavior-y: contain; touch-action: pan-y pinch-zoom; background-color: #efeae2; -webkit-overflow-scrolling: touch; }
+.wa-tablet .wa-channel-footer { display: flex; align-items: center; justify-content: center; flex: 0 0 auto; min-height: 45px; box-sizing: border-box; gap: 7px; padding: 10px 12px 15px; background: #fafbfc; color: #7a858a; font: 400 10px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-align: center; border-top: 1px solid #e2e5e7; }
+.wa-tablet .wa-channel-footer svg { width: 13px; height: 13px; flex: 0 0 13px; }
+.wa-tablet .wa-home-indicator { position: absolute; bottom: 5px; left: 50%; width: 100px; height: 4px; transform: translateX(-50%); border-radius: 8px; background: #111b21; pointer-events: none; }
+.wa-tablet a:focus-visible, .wa-tablet iframe:focus-visible { outline: 3px solid #168747; outline-offset: -3px; }
+@media (max-width: 1050px) and (min-width: 701px) {
+ .wa-tablet .wa-app { grid-template-columns: 205px minmax(0, 1fr); }
+  .wa-tablet a.wa-channel-card { gap: 8px; padding-inline: 8px; }
+  .wa-tablet a.wa-channel-card .wa-avatar { width: 32px; height: 32px; flex-basis: 32px; }
+}
+@media (max-width: 700px) {
+ .wa-phone.wa-tablet { width: min(100%, 540px); aspect-ratio: 3 / 4; padding: 11px; border-radius: 29px; }
+ .wa-tablet .wa-island { top: 3px; width: 5px; height: 5px; }
+ .wa-tablet .wa-screen { border-radius: 18px; }
+ .wa-tablet .wa-app { display: flex; }
+ .wa-tablet .wa-channel-list { display: none; }
+ .wa-tablet .wa-conversation { width: 100%; }
+ .wa-tablet .wa-statusbar { height: 28px; flex-basis: 28px; padding-inline: 16px; font-size: 10px; }
+ .wa-tablet .wa-header { min-height: 66px; padding: 10px 13px; gap: 9px; }
+ .wa-tablet .wa-channel-name { font-size: 12px; }
+ .wa-tablet .wa-avatar { width: 34px; height: 34px; flex-basis: 34px; }
+  .wa-tablet a.wa-header-open { width: 29px; height: 29px; flex-basis: 29px; }
+ .wa-tablet .wa-channel-footer { font-size: 9px; }
+}

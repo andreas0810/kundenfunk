@@ -1,0 +1,39 @@
+{# Public component. Supply tablet.name, avatar, embedUrl and channelUrl. #}
+<div class="wa-live-phone">
+  <div class="wa-phone wa-tablet" aria-label="WhatsApp-Kanal in der Tabletansicht">
+    <span class="wa-island" aria-hidden="true"></span>
+    <div class="wa-screen">
+      <div class="wa-statusbar" aria-hidden="true">
+        <span><time data-wa-clock>–:–</time><span data-wa-date></span></span>
+        <span class="wa-sb-icons"><svg viewBox="0 0 48 16" width="48" height="16" fill="none"><path d="M2 6a10 10 0 0 1 14 0M5 9a6 6 0 0 1 8 0M8 12a2 2 0 0 1 2 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><rect x="23" y="3" width="20" height="10" rx="3" stroke="currentColor" stroke-width="1.3"/><rect x="25" y="5" width="15" height="6" rx="1" fill="currentColor"/><path d="M45 6v4" stroke="currentColor" stroke-width="1.6"/></svg></span>
+      </div>
+      <div class="wa-app">
+        <aside class="wa-channel-list" aria-label="WhatsApp-Kanäle">
+          <div class="wa-app-brand">WhatsApp</div>
+          <div class="wa-sidebar-heading">Aktuelles</div>
+          <div class="wa-sidebar-label"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8 12h8m-4-4v8"/></svg>Kanäle</div>
+          <a class="wa-channel-card" href="{{ tablet.channelUrl }}" target="_blank" rel="noopener noreferrer" aria-label="{{ tablet.name }} auf WhatsApp öffnen">
+            <img src="{{ tablet.avatar }}" alt="" class="wa-avatar" loading="lazy">
+            <span><b>{{ tablet.name }}</b><small>Öffentlicher Kanal</small></span>
+          </a>
+          <p class="wa-sidebar-note">Neuigkeiten aus unserem<br>WhatsApp-Kanal.</p>
+          <a class="wa-sidebar-open" href="{{ tablet.channelUrl }}" target="_blank" rel="noopener noreferrer">In WhatsApp öffnen <span aria-hidden="true">↗</span></a>
+        </aside>
+        <div class="wa-conversation">
+          <div class="wa-header">
+            <img class="wa-avatar" src="{{ tablet.avatar }}" alt="" loading="lazy">
+            <div class="wa-htext"><b class="wa-channel-name">{{ tablet.name }}</b><span class="wa-followers">Öffentlicher WhatsApp-Kanal</span></div>
+            <a class="wa-header-open" href="{{ tablet.channelUrl }}" target="_blank" rel="noopener noreferrer" aria-label="Kanal in WhatsApp öffnen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6m0-6L10 14M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/></svg></a>
+          </div>
+          {% if tablet.embedUrl %}
+          <iframe class="wa-chat wa-backend-frame" src="{{ tablet.embedUrl }}" title="Neuigkeiten aus unserem WhatsApp-Kanal – hier in den Nachrichten scrollen" tabindex="0" loading="lazy" referrerpolicy="no-referrer"></iframe>
+          {% else %}
+          <div class="wa-chat"><p class="wa-empty"><a href="{{ tablet.channelUrl }}" target="_blank" rel="noopener noreferrer">Neuigkeiten direkt auf WhatsApp lesen</a></p></div>
+          {% endif %}
+          <div class="wa-channel-footer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 10 14-5v14L5 14zm3 5 2 5H7l-2-6"/></svg>Nur Kanal-Admins können Beiträge veröffentlichen.</div>
+        </div>
+      </div>
+      <span class="wa-home-indicator" aria-hidden="true"></span>
+    </div>
+  </div>
+</div>

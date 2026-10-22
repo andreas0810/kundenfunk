@@ -1,7 +1,7 @@
 # Kundenfunk · Frontend und Integrationen
 
 Öffentlicher Quellstand der Kundenoberfläche, CSS-Dateien und Website-Integrationen.
-Produktstand: **0.3.0**. WordPress-Plugin und Einbettungspaket: **0.2.0**.
+Produktstand: **0.3.1**. WordPress-Plugin und Einbettungspaket: **0.2.0**.
 
 | Dateien | Verwendung |
 | --- | --- |
@@ -11,6 +11,7 @@ Produktstand: **0.3.0**. WordPress-Plugin und Einbettungspaket: **0.2.0**.
 | `web/wa-channel-feed.js`, `web/demo.html` | Website-Widget und Demo mit erfundenen Daten |
 | `web/embed-view.js` | Öffentliche HTML-/CSS-Darstellung der Website-Einbettung |
 | `integrations/embed/` | HTML-Einbettung für Websites und CMS |
+| `integrations/tablet/` | iPad-Ansicht mit CSS und Nunjucks-Vorlage für Kundenwebsites |
 | `integrations/wordpress/kundenfunk/` | WordPress-Plugin mit `[kundenfunk]`-Shortcode |
 | `web/eleventy-data/` | Lokaler JSON-Loader für Eleventy |
 

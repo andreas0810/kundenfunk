@@ -1,5 +1,12 @@
 # Änderungen
 
+## 0.3.1 · 22.10.2026
+
+- Wiederverwendbare Tabletansicht mit iPad-Proportionen, schlankem Rahmen und Kanalleiste.
+- Aktuelle WhatsApp-Anmutung mit hellem Kanalkopf, Nachrichtenblasen und einem gestalteten Leerzustand.
+- Auf dem Handy bleibt der Nachrichtenbereich einspaltig; die Sidebar wird ausgeblendet.
+- Öffentliche Nunjucks-Vorlage, CSS und lokale Uhrzeitanzeige für Kundenwebsites.
+
 ## 0.3.0 · 22.10.2026
 
 - Erstmalige öffentliche Git-Version der Kundenoberfläche und Website-Integrationen.

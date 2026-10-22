@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.1",
   "files": {
     "web/index.html": "fb22dda00e273d6af83a324bfb3ec5f3e7870063617e69644ee9b94f969e39c4",
     "web/backend.css": "87c02690c5e920e861870bd5c1d6a7b68f13398b523b6d6a869b47c36b691300",
@@ -14,7 +14,7 @@
     "web/kunden/einrichten/index.html": "42830fbf729611b612e40c6457c16c714815880e7da55ce353f42d77dfde5a0a",
     "web/kunden/nzw/nzw.css": "1e8ba2bdd48909434f4c433174cc9ed8c6cad3e7111d7d3a48ce3457ff21a040",
     "web/kunden/nzw/index.html": "9fa92cc9fa728b06dee05b9b3be99f749ce69d376e1a9a5ff9a327db7d865215",
-    "web/embed-view.js": "86c11d022973e40707cbabe083216f97e8124caf26d4499c0d0f16bc1dd2870b",
+    "web/embed-view.js": "2c22867c1630451ed66b345eeda3978134e73dc504f2dfe5555948925f6d9e3d",
     "web/install/index.html": "a9d1d392e6be9f48f4957056cd571ab19ce5fc3687baabaeabac47bb59bdeda8",
     "web/wa-channel-feed.js": "fe9934927d271376c73e96d8f22db7ac2142e7a1764539fda9e0478592457596",
     "web/demo.html": "74b403fb495500d34b16489d3f2fafbe7ecd793c0a6a5e1e4a68ef3dbdd1d67e",
@@ -23,10 +23,14 @@
     "web/README.md": "7f665ab5b8439f65f8038d250791f4f52503e9ef70034bf96ed35060e1d4c04c",
     "integrations/embed/README.md": "7b8ebf5225e76d66084973200483c04fa154b21e2436d86fed37f5766349abda",
     "integrations/embed/einbettung.html": "ccf80b52e278c4ec2e3e50e1599d626216aad2f5c2bad6e2f08809960e03ad24",
+    "integrations/tablet/README.md": "23a12760dd401b80fca0c88c7f53aa01e87bf81409374e80f89c90b259a99afa",
+    "integrations/tablet/kundenfunk-tablet.njk": "084f24c667d5f3e06d9897165c4329c7f1961804d9d01742aa970ea286be580d",
+    "integrations/tablet/kundenfunk-tablet.css": "0079b931f4e7c4ae5bcf90348510fcf7b059b04ae0b7541ab20f60ba96d3a12e",
+    "integrations/tablet/kundenfunk-tablet.js": "23e1af8ac5b90cf12923f0f43cf9e68223a0bc9de0551f005bcf3469815cba1f",
     "integrations/wordpress/kundenfunk/kundenfunk.php": "f5289c64dbeaabe87f9c13b36985f07b06060b95bfdfbfc9745f92d1f25c48bd",
     "integrations/wordpress/kundenfunk/readme.txt": "88260bba25852c5786b01b921bfdc9234da397446de7359eb8bcfc30f42f46cc",
-    "README.md": "9a317b858b2356f196ce93f7d31d219a1de2d41e9eada81a4a525cbc589d0757",
-    "CHANGELOG.md": "2676d3a90546ff3050cd4948f5b371f921d0e9f3a5f8a6de251135025ac06df4",
+    "README.md": "89510ca3640ab994a57ebe7821114821e0f4aabc770def4f3b698da6abd59641",
+    "CHANGELOG.md": "b660e526afe15a4c810e58131ed339b8a64c46aa0db6ce0d01eeb1fb2b5ae49c",
     "COPYRIGHT.md": "2ab875badddbbc4587c537e0130eeca4eeb03e6ac35020a56408a49ed97f1db9",
     ".gitignore": "b642a86d545fbc8b66288e3d58082653912fc514d63d590f8d6d40f142d5cb0c"
   }
