@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kundenfunk - Feed-Demo</title>
+  <style>
+    body { font: 16px/1.5 system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; color: #10241f; }
+    h1 { font-size: 1.3rem; }
+    .hint { color: #5d7068; font-size: .9rem; }
+    wa-channel-feed { display: block; margin-top: 1.5rem; border: 1px solid #e3e9e6; border-radius: 14px; padding: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Kundenfunk - WhatsApp-Feed auf der Website</h1>
+  <p class="hint">Vorschau mit erfundenen Beispieldaten aus <code>sample-feed.json</code>.</p>
+
+  <wa-channel-feed src="./sample-feed.json" limit="10" locale="de-DE"></wa-channel-feed>
+
+  <script src="./wa-channel-feed.js"></script>
+</body>
+</html>

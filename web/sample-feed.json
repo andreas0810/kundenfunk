@@ -1,0 +1,8 @@
+{
+  "channel": {"name": "Beispielverein", "description": "Erfundene Nachrichten für die Widget-Vorschau", "image": null},
+  "updatedAt": "2026-10-22T10:00:00.000Z",
+  "posts": [
+    {"id": "demo-2", "timestamp": "2026-10-22T09:00:00.000Z", "text": "Unser nächster Vereinsabend findet am Freitag um 19 Uhr statt. Alle sind willkommen.", "media": [], "links": []},
+    {"id": "demo-1", "timestamp": "2026-10-21T15:00:00.000Z", "text": "Die neue Website ist online. Hier findest du künftig unsere Neuigkeiten.", "media": [], "links": []}
+  ]
+}

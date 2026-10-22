@@ -1,0 +1,33 @@
+{
+  "version": "0.3.0",
+  "files": {
+    "web/index.html": "fb22dda00e273d6af83a324bfb3ec5f3e7870063617e69644ee9b94f969e39c4",
+    "web/backend.css": "87c02690c5e920e861870bd5c1d6a7b68f13398b523b6d6a869b47c36b691300",
+    "web/area-links.js": "4001a9b47d87739d892f199a1d990271bcc9d9dad8687a9c56d9fc0553670974",
+    "web/user-auth.js": "32d042edbae7d6d17601a93eb25b571edc8471aa1887dffe426f456093aa7ab5",
+    "web/setup-status.js": "74a6026e547388fc55ce11e1fd0552bdfdae141fb6406987c5ae79c6b12637d5",
+    "web/konto/index.html": "0c7344a2a3c7b2ff4f8539d075dec3e434eb3c3d713cfbcb8233492695e9753a",
+    "web/konto/account.js": "ee3bcdd07cd46b2c1d59c6e79b59195b215dbf7d08f8606dc99f95a1f726d373",
+    "web/kunden/index.html": "cf82575c7bb292ab5bc486a0f1c3e68d3e04d00ffef34d743e815023ac98f40e",
+    "web/kunden/customer.js": "fe76c28fc8f3c92e4a5aa64c657bfb58cbefc2eb06939d5236d41bbda3a37f27",
+    "web/kunden/anmelden/index.html": "031df2b9f934aecc11857f196dcd7cbaf1022b2bc3b9f27254185e530351d9ce",
+    "web/kunden/einrichten/index.html": "42830fbf729611b612e40c6457c16c714815880e7da55ce353f42d77dfde5a0a",
+    "web/kunden/nzw/nzw.css": "1e8ba2bdd48909434f4c433174cc9ed8c6cad3e7111d7d3a48ce3457ff21a040",
+    "web/kunden/nzw/index.html": "9fa92cc9fa728b06dee05b9b3be99f749ce69d376e1a9a5ff9a327db7d865215",
+    "web/embed-view.js": "86c11d022973e40707cbabe083216f97e8124caf26d4499c0d0f16bc1dd2870b",
+    "web/install/index.html": "a9d1d392e6be9f48f4957056cd571ab19ce5fc3687baabaeabac47bb59bdeda8",
+    "web/wa-channel-feed.js": "fe9934927d271376c73e96d8f22db7ac2142e7a1764539fda9e0478592457596",
+    "web/demo.html": "74b403fb495500d34b16489d3f2fafbe7ecd793c0a6a5e1e4a68ef3dbdd1d67e",
+    "web/sample-feed.json": "c3b982d4e8525cfcd2f5c2dc58ffa6f23297ddc540730c71f91a227c655c8d54",
+    "web/eleventy-data/whatsapp-channel.js": "36d0cc8c9e81ed4fda0227022e93cddc8bbd6763b612b3b832de1a778105e1a2",
+    "web/README.md": "7f665ab5b8439f65f8038d250791f4f52503e9ef70034bf96ed35060e1d4c04c",
+    "integrations/embed/README.md": "7b8ebf5225e76d66084973200483c04fa154b21e2436d86fed37f5766349abda",
+    "integrations/embed/einbettung.html": "ccf80b52e278c4ec2e3e50e1599d626216aad2f5c2bad6e2f08809960e03ad24",
+    "integrations/wordpress/kundenfunk/kundenfunk.php": "f5289c64dbeaabe87f9c13b36985f07b06060b95bfdfbfc9745f92d1f25c48bd",
+    "integrations/wordpress/kundenfunk/readme.txt": "88260bba25852c5786b01b921bfdc9234da397446de7359eb8bcfc30f42f46cc",
+    "README.md": "9a317b858b2356f196ce93f7d31d219a1de2d41e9eada81a4a525cbc589d0757",
+    "CHANGELOG.md": "2676d3a90546ff3050cd4948f5b371f921d0e9f3a5f8a6de251135025ac06df4",
+    "COPYRIGHT.md": "2ab875badddbbc4587c537e0130eeca4eeb03e6ac35020a56408a49ed97f1db9",
+    ".gitignore": "b642a86d545fbc8b66288e3d58082653912fc514d63d590f8d6d40f142d5cb0c"
+  }
+}
