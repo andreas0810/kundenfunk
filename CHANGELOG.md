@@ -1,5 +1,14 @@
 # Änderungen
 
+## 0.4.0 · 23.10.2026
+
+- Homepage-Addon mit Produktseite, sieben Vorteilen und öffentlichem Design-Konfigurator.
+- Vier Feed-Themes, drei Layouts und vier Geräteoptionen mit schwarzem/silbernem Smartphone, Tablet und rahmenloser Einbindung.
+- Darstellung im Kundenkonto speichern und ohne Wechsel des Einbettungslinks übernehmen.
+- WordPress-Plugin mit Vorschau, zentralem oder lokalem Design, Intervallen und festen Uhrzeiten.
+- Anzeige von letztem und nächstem Plugin-Abruf; tägliche Zeiten folgen der Website-Zeitzone.
+- Eigenes Einbettungspaket einschließlich wiederverwendbarer Tabletvorlage.
+
 ## 0.3.1 · 22.10.2026
 
 - Wiederverwendbare Tabletansicht mit iPad-Proportionen, schlankem Rahmen und Kanalleiste.

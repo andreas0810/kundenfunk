@@ -1,6 +1,13 @@
 import {$,date,errorText,renderStatus,showQR,pairingRequest,withChannelFeedback,copy} from '/setup-status.js';
 import {api,viewUser,loginURL} from '/user-auth.js';
+import {mountWidgetEditor} from '/widget-editor.js';
 let user=null,current=null,poll=null,pairPoll=null,loading=false;
+let widgetLoaded=false;
+async function loadWidget(){
+ const data=await api('/v1/customer/widget');
+ mountWidgetEditor($('widget-editor'),{settings:data.settings,previewURL:'/v1/customer/widget-preview',address:current.embed_url,save:settings=>api('/v1/customer/widget','POST',settings)});
+ widgetLoaded=true;
+}
 const message=(text,tone='')=>{$('result').textContent=text;$('result').dataset.tone=tone;};
 function display(data,fill=false){
  current=data;renderStatus(data);$('customer-name').textContent=data.customer_name;$('customer-website').textContent=data.site_origin;$('checked-at').textContent='Verbindungsstand geladen am '+date(data.observed_at);
@@ -8,7 +15,8 @@ function display(data,fill=false){
  $('account-name').textContent='Angemeldet als '+user.username;
  $('license-fingerprint').textContent='Lizenz: '+(data.key_suffix?'…'+data.key_suffix:'Bestehende Lizenz')+' · '+(data.customer_activated?'Aktiviert':'Aktivierung ausstehend');
  if(fill)$('origin').value=data.site_origin;
- const wordpress=data.platform==='wordpress';$('embed-install').hidden=wordpress;$('wordpress-install').hidden=!wordpress;
+ $('embed-install').hidden=false;$('wordpress-install').hidden=false;$('widget-panel').hidden=!data.customer_activated;
+ if(data.customer_activated&&!widgetLoaded)loadWidget().catch(error=>message(errorText(error),'error'));
  if(data.embed_url){const frame=document.createElement('iframe');frame.src=data.embed_url;frame.title='Neuigkeiten aus unserem WhatsApp-Kanal';frame.width='100%';frame.height='640';frame.loading='lazy';frame.referrerPolicy='no-referrer';frame.style.border='0';$('code').value=frame.outerHTML;}else $('code').value='';
  $('api-address').value=location.origin;updateControls(data);
  const states={waiting_activation:'Trage oben deinen Lizenzschlüssel ein. Erst danach kannst du WhatsApp koppeln und Nachrichten übernehmen.',waiting_sim:'Richte WhatsApp auf dem SIM-Handy ein, abonniere deinen Kanal und speichere unten Rufnummer und Kanallink.',reader_unavailable:'Der Kanalabruf ist momentan nicht erreichbar. Prüfe später erneut. Bleibt die Störung bestehen, kontaktiere den Kundenfunk-Betreiber.',waiting_pairing:'Erzeuge unten einen QR-Code und scanne ihn auf deinem SIM-Handy unter WhatsApp → Verknüpfte Geräte → Gerät hinzufügen. Danach erscheint hier „Gerät verbunden“.',waiting_channel:'Abonniere deinen Kanal mit der Kundenfunk-Nummer. Wähle anschließend unten „Kanal prüfen und Nachrichten abgleichen“.',sync_error:'Prüfe deine WhatsApp-Verbindung und starte „Kanal prüfen und Nachrichten abgleichen“ erneut.',waiting_first_message:'Veröffentliche einen neuen Textbeitrag in deinem Kanal und prüfe anschließend den Nachrichtenstand.',paused:'Deine Lizenz ist pausiert oder beendet. Kontaktiere den Kundenfunk-Betreiber für die Freigabe.'};

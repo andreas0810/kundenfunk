@@ -14,6 +14,7 @@ export const errors = {
  username_taken:'Dieser Benutzername ist bereits vergeben.',
  user_disabled:'Dieses Konto ist gesperrt. Aktiviere es zuerst wieder.',
  last_admin:'Der letzte eingerichtete Admin kann nicht gesperrt werden.',
+ invalid_widget_settings:'Bitte Theme, Skin, Layout und Aktualisierungsintervall prüfen.',
  invalid_key_label:'Bitte einen Namen für den API-Schlüssel mit höchstens 80 Zeichen eingeben.',
  api_key_limit:'Für diese Website sind bereits zehn API-Schlüssel aktiv. Sperre zuerst einen nicht mehr benötigten Schlüssel.',
  api_key_not_found:'Dieser API-Schlüssel existiert nicht mehr oder gehört zu einem anderen Kunden.',
