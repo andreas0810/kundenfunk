@@ -1,0 +1,46 @@
+{
+  "currency": "EUR",
+  "effective_from": "2026-10-24",
+  "price_type": "endprice",
+  "additional_support_hour_eur": 25,
+  "additional_support_minimum_minutes": 15,
+  "plans": [
+    {
+      "id": "start",
+      "name": "Start",
+      "monthly_eur": 12.9,
+      "setup_eur": 29,
+      "care_minutes": 5,
+      "setup_minutes": 30,
+      "description": "Für deine Homepage, wenn du oder deine Betreuung das Plugin oder Widget selbst einsetzt.",
+      "setup_description": "Kundenkonto, Lizenz, SIM-Aktivierung und begleitete QR-Einrichtung. Bis zu 30 Minuten Einrichtungsbegleitung."
+    },
+    {
+      "id": "betreut",
+      "name": "Betreut",
+      "monthly_eur": 19.9,
+      "setup_eur": 49,
+      "care_minutes": 15,
+      "setup_minutes": 60,
+      "description": "Für deine Homepage, wenn wir die Einbindung und kleine Anpassungen gemeinsam übernehmen.",
+      "setup_description": "Alles aus Start plus Einbindung auf einer vorhandenen Homepage, Theme-Auswahl und gemeinsamer Funktionstest. Bis zu 60 Minuten insgesamt."
+    }
+  ],
+  "included": [
+    "Eine Website und ein öffentlicher WhatsApp-Kanal",
+    "Eine eigene Kundenfunk-Rufnummer mit SIM-Betrieb",
+    "WordPress-Plugin oder Website-Widget",
+    "Alle vier Themes, drei Layouts und Geräte-Skins",
+    "Technische Wartung, Updates und Verbindungsprüfung",
+    "Persönliches Kundenkonto mit Lizenz- und Verbindungsstatus"
+  ],
+  "notes": [
+    "Endpreise je Website. Verbindliche Leistungs- und Steuerangaben erhältst du im individuellen Angebot.",
+    "Das monatliche Pflegebudget gilt für kleine, individuelle Hilfen und Anpassungen. Nicht genutzte Minuten werden nicht angesammelt.",
+    "Zusätzliche Arbeiten werden vorab abgestimmt. Ein vorhandenes geeignetes Handy für SIM und QR-Einrichtung wird vorausgesetzt; neue Hardware und größere Website-Umbauten sind nicht enthalten.",
+    "Bestehende Pilotvereinbarungen bleiben bestehen. Die Beauftragung und Abrechnung erfolgen über deine Homepage-Betreuung.",
+    "Die einmalige Freischaltung gilt je Website für WordPress-Plugin oder Widget. Sie wird bei Nutzung beider Einbauwege auf derselben Website nicht doppelt berechnet."
+  ],
+  "license_eur": 19,
+  "license_label": "Einmalige Plugin-/Widget-Freischaltung"
+}

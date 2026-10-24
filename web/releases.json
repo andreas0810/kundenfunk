@@ -1,0 +1,57 @@
+{
+  "current": "0.5.0",
+  "wordpress": "0.4.0",
+  "embed": "0.5.0",
+  "versions": [
+    {
+      "version": "0.5.0",
+      "date": "2026-10-24",
+      "title": "Preise, Versionshistorie und Entwicklerhilfen",
+      "wordpress": "0.4.0",
+      "embed": "0.5.0",
+      "changes": [
+        "Einmalige Plugin-/Widget-Freischaltung für 19 Euro je Website, gesonderte Einrichtung und zwei günstige Betreuungsangebote mit SIM-Betrieb und monatlicher Pflege.",
+        "Öffentliche Versionshistorie mit getrennten Produkt-, Plugin- und Paketständen.",
+        "Einbauanleitungen für WordPress und andere Homepages, Codebeispiele und Widget-Codegenerator.",
+        "Anfragetext für ein individuelles Angebot direkt im Browser vorbereiten."
+      ]
+    },
+    {
+      "version": "0.4.0",
+      "date": "2026-10-23",
+      "title": "Das Homepage-Addon mit Konfigurator",
+      "wordpress": "0.4.0",
+      "embed": "0.4.0",
+      "changes": [
+        "Produktseite mit sieben Gründen für Kundenfunk und öffentlicher Vorschau.",
+        "Vier Themes, drei Layouts und vier Geräteoptionen.",
+        "Designs im Kundenkonto speichern.",
+        "WordPress-Plugin mit Intervallen, festen Tageszeiten und Vorschau."
+      ]
+    },
+    {
+      "version": "0.3.1",
+      "date": "2026-10-22",
+      "title": "Tabletansicht für Kundenwebsites",
+      "wordpress": "0.2.0",
+      "embed": "0.2.0",
+      "changes": [
+        "Wiederverwendbare iPad-Ansicht mit Kanalleiste und Nachrichtenbereich.",
+        "Mobile einspaltige Ansicht und WhatsApp-Anmutung.",
+        "Öffentliche Nunjucks-Vorlage, CSS und Uhrzeitanzeige."
+      ]
+    },
+    {
+      "version": "0.3.0",
+      "date": "2026-10-22",
+      "title": "Erster versionierter Produktstand",
+      "wordpress": "0.2.0",
+      "embed": "0.2.0",
+      "changes": [
+        "Persönliche Kundenanmeldung, Lizenzaktivierung, SIM- und QR-Kopplung.",
+        "Sichtbarer Kanal-, Geräte- und Nachrichtenstatus.",
+        "Öffentliche Website-Integrationen und separater privater Produktkern."
+      ]
+    }
+  ]
+}

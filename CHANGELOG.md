@@ -1,5 +1,14 @@
 # Änderungen
 
+## 0.5.0 · 24.10.2026
+
+- Preise mit 19 EUR einmaliger Plugin-/Widget-Freischaltung je Website, gesonderter Einrichtung und monatlichem SIM-/Pflegebetrieb.
+- Start: 48 EUR insgesamt einmalig und 12,90 EUR monatlich; Betreut: 68 EUR insgesamt einmalig und 19,90 EUR monatlich.
+- Versionshistorie mit getrennten Produkt-, Plugin- und Einbettungspaketständen sowie älteren Downloads.
+- Entwickleranleitungen für WordPress, HTML und eigene Serverintegrationen, einschließlich Shortcodes, Cron, Cache und Schlüsselverwaltung.
+- Codegenerator für öffentliche Widgetadressen und Angebotsvorlage zum Kopieren im Browser.
+- WordPress-Plugin bleibt unverändert bei 0.4.0; Einbettungspaket mit ergänzter Anleitung bei 0.5.0.
+
 ## 0.4.0 · 23.10.2026
 
 - Homepage-Addon mit Produktseite, sieben Vorteilen und öffentlichem Design-Konfigurator.

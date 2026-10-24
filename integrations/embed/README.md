@@ -1,4 +1,14 @@
-# Kundenfunk-Einbettung 0.2.0
+# Kundenfunk-Einbettung 0.5.0
+
+[Einbauhilfe und Codegenerator](https://kundenfunk.pages.dev/entwickler/) ·
+[Versionshistorie und Downloads](https://kundenfunk.pages.dev/versionen/) ·
+[Preise](https://kundenfunk.pages.dev/preise/)
+
+Die Einbettung bleibt mit der bestehenden Feed-Schnittstelle kompatibel. Neu in
+diesem Paket sind die verlinkten Einbauhilfen und die aktualisierte Anleitung.
+Die Plugin-/Widget-Freischaltung kostet 19 EUR einmalig je Website; Einrichtung und
+laufender SIM-/Pflegebetrieb kommen hinzu. Beide Einbauwege derselben Website
+werden nur einmal freigeschaltet. Bestehende Pilotvereinbarungen gelten weiter.
 
 Für Shopify, Wix, Squarespace, Joomla, Tilda sowie normale HTML-/Eleventy-Websites. Dies ist ein gemeinsames HTML-Paket mit plattformspezifischen Anleitungen, keine Sammlung nativer Store-Apps. WordPress hat ein eigenes ZIP-Plugin.
 
