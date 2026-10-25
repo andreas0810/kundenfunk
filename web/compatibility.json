@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-25",
+  "wordpress_tested": "7.1.3",
+  "php_tested": "8.3",
+  "wordpress_minimum": "6.0",
+  "php_minimum": "7.4",
+  "systems": [
+    {"name":"WordPress","method":"Natives Plugin und Shortcode","status":"tested","label":"Laufzeit geprüft","detail":"Aktivierung, Optionen, Shortcode, Cron, Cache und Deaktivierung mit WordPress 7.1.3 / PHP 8.3 geprüft. Die Mindestversionen sind deklarierte Voraussetzungen, keine vollständig getestete Versionsmatrix."},
+    {"name":"HTML / Eleventy","method":"iframe oder Tabletvorlage","status":"tested","label":"Einbettung geprüft","detail":"HTML-Einbettung, Domainfreigabe und mobile Darstellung geprüft. Der bestehende NZW-Pilot verwendet die Tabletansicht."},
+    {"name":"Gutenberg / Elementor / Divi","method":"Vorhandener Shortcode-Baustein","status":"manual","label":"Installation einzeln prüfen","detail":"Der WordPress-Shortcode wird vom Plugin bereitgestellt. Kombinationen mit einzelnen Editoren, Themes und Cacheplugins sind noch nicht als eigene Testmatrix geprüft."},
+    {"name":"Shopify","method":"Custom Liquid im Theme","status":"manual","label":"Installation einzeln prüfen","detail":"Generischer iframe-Code, sofern das Theme einen geeigneten Bereich bietet. Keine native Shopify-App; eine reale Shop-Abnahme steht aus."},
+    {"name":"Wix / Webflow","method":"HTML-Embed-Element","status":"manual","label":"Installation einzeln prüfen","detail":"Veröffentlichte Domain und gegebenenfalls die tatsächliche Editor-Origin freigeben. Keine pauschalen Domain-Wildcards; eine reale Kundeninstallation steht aus."},
+    {"name":"Squarespace / Joomla / Tilda","method":"HTML- oder Codeblock","status":"manual","label":"Installation einzeln prüfen","detail":"Tarif, Textfilter und iframe-Erlaubnis des jeweiligen Systems prüfen. Das HTML-Paket ist kein nativer Erweiterungsinstaller."},
+    {"name":"WordPress.com","method":"Plugin-fähiger Tarif oder erlaubtes HTML-Embed","status":"manual","label":"Tarif vorher prüfen","detail":"Die konkrete Tarif- und Editorberechtigung ist entscheidend. WordPress.org-Software und WordPress.com-Hosting sind unterschiedliche Angebote."},
+    {"name":"Chrome / Chromium","method":"Desktop und 390-px-Mobilansicht","status":"tested","label":"Browserablauf geprüft","detail":"Anmeldung, Konfigurator, öffentliche Informationsseiten und Codegenerator automatisiert geprüft. Das ist kein Test jedes Endgeräts."},
+    {"name":"Safari / Firefox / echte iPads","method":"Standardsbasiertes HTML und CSS","status":"manual","label":"Geräteabnahme offen","detail":"Bisher keine eigene wiederholbare Browser- und Gerätematrix. Die iPad-Optik ist ein Skin und kein Beleg für einen echten iPad-Test."},
+    {"name":"Private Chats / vollständige Medienarchive","method":"Nicht angeboten","status":"unsupported","label":"Nicht unterstützt","detail":"Kundenfunk übernimmt öffentliche Kanaltexte und Bildunterschriften. Medienanhänge, private Unterhaltungen und ein Versand an einzelne Kontakte gehören nicht zum aktuellen Produkt."}
+  ]
+}

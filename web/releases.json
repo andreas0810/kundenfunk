@@ -1,8 +1,21 @@
 {
-  "current": "0.5.0",
-  "wordpress": "0.4.0",
-  "embed": "0.5.0",
+  "current": "0.6.0",
+  "wordpress": "0.4.1",
+  "embed": "0.6.0",
   "versions": [
+    {
+      "version": "0.6.0",
+      "date": "2026-10-25",
+      "title": "Hilfen für Betreiber, Kompatibilität und gepflegte Entwicklung",
+      "wordpress": "0.4.1",
+      "embed": "0.6.0",
+      "changes": [
+        "Neue Betreiberanleitung, eigene WordPress-Seite und nachvollziehbare Kompatibilitätsübersicht.",
+        "WordPress-Plugin mit ergänzten Dienst- und Datenhinweisen, Verzeichnis-Readme und überprüfter Ausgabe.",
+        "Öffentliche Beitrags-, Support- und Sicherheitsrichtlinien sowie automatisierte GitHub-Prüfungen.",
+        "Veröffentlichungspakete und Schritte zur WordPress.org-Einreichung dokumentiert."
+      ]
+    },
     {
       "version": "0.5.0",
       "date": "2026-10-24",

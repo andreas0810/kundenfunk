@@ -1,4 +1,4 @@
-# Kundenfunk-Einbettung 0.5.0
+# Kundenfunk-Einbettung 0.6.0
 
 [Einbauhilfe und Codegenerator](https://kundenfunk.pages.dev/entwickler/) ·
 [Versionshistorie und Downloads](https://kundenfunk.pages.dev/versionen/) ·
@@ -50,3 +50,6 @@ Code an der vorgesehenen Stelle in HTML oder Eleventy-Template einsetzen. Der if
 ## Kompatibilität
 
 Die HTML-Ausgabe ist geprüft. Tests in echten Shopify-/Wix-/Squarespace-/Joomla-/Tilda-Kundeninstallationen stehen aus. Der gleiche iframe lässt sich in einem HTML-Element in Webflow einsetzen; eine separate Prüfung steht ebenfalls aus. Tarif- und Editorvoraussetzungen beim jeweiligen Anbieter prüfen.
+
+Kompatibilitätsstatus nach System und geprüfte Voraussetzungen:
+https://kundenfunk.pages.dev/kompatibilitaet/

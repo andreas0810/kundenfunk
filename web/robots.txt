@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /kunden/
+Disallow: /konto/
+Disallow: /v1/
+Disallow: /downloads/
+Sitemap: https://kundenfunk.pages.dev/sitemap.xml

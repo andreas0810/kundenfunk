@@ -1,52 +1,111 @@
 === Kundenfunk ===
+Tags: social feed, whatsapp, shortcode, news, channel
 Requires at least: 6.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.4.0
+Stable tag: 0.4.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Dein WhatsApp-Kanal als Homepage-Addon. Texte automatisch in WordPress anzeigen, Themes und Geräte-Skins wählen und Abrufzeiten festlegen. Ein freigeschalteter Kundenfunk-Zugang ist erforderlich.
+Display public WhatsApp channel text with themes, device frames and scheduled refreshes. Requires a paid Kundenfunk service account.
+
+== Description ==
+
+Kundenfunk connects your WordPress site to the Kundenfunk channel feed service.
+The service operates a dedicated SIM/phone connection, receives public channel posts
+and provides a website-specific feed. It is not an official Meta API product.
+
+The connector includes four themes, three layouts, phone/tablet frames, a preview,
+a [kundenfunk] shortcode and refreshes every 15, 30, 60 or 180 minutes, or at up to
+six daily times in the WordPress site timezone. The settings interface is currently
+in German. Channel text and captions are supported; media attachments remain in
+WhatsApp. A server cron is needed for punctual scheduled refreshes.
+
+The full connector source is included under GPLv2 or later. A paid external service
+account is required. Current service pricing includes a one-time website activation
+of EUR 19, separate setup and a monthly SIM/maintenance fee from EUR 12.90.
+No local feature is disabled by a trial timer. See the service pricing before use:
+https://kundenfunk.pages.dev/preise/
+
+= External service and data transfer =
+
+No service request is made merely by installing an unconfigured connector.
+After an administrator supplies a server address and website API key and clicks
+"Website verbinden", the connector checks /v1/license. It then requests /v1/feed
+manually or according to the saved schedule. Requests send the API key in the
+Authorization header. The service can observe the site's server IP and normal
+HTTP request metadata. The feed contains the configured public channel name, URL,
+post text, timestamps and presentation settings, and is cached in the WordPress
+database. The API key is stored in a non-autoloaded WordPress option and must be
+protected with the database; it is not printed in page content.
+
+Plugin assets and previews are local. No analytics or advertising request is added
+by this connector. Following a channel link opens WhatsApp. If supported images
+are present in a feed, visitors may request them from the configured Kundenfunk
+server; the current service does not import media attachments.
+
+Service details and data flow: https://kundenfunk.pages.dev/wordpress/#datenaustausch
+Service conditions and the applicable provider's data protection information must
+be supplied with the individual service agreement before activation. The technical
+data-flow page does not replace those documents.
 
 == Installation ==
-1. Persönlichen Einrichtungslink öffnen, eigenes Passwort vergeben und Lizenz im Kundenkonto aktivieren. SIM vorbereiten, WhatsApp per QR koppeln und Kanal bestätigen.
-2. ZIP über Plugins > Installieren > Plugin hochladen installieren und aktivieren.
-3. Im Kundenkonto einen API-Schlüssel für WordPress erstellen. Einstellungen > Kundenfunk: HTTPS-Serveradresse ohne Pfad und API-Schlüssel eintragen. Keine zweite Lizenzaktivierung nötig.
-4. Design aus dem Kundenkonto übernehmen oder für diese WordPress-Website anpassen. Theme, Geräte-Skin, Layout und Beitragsanzahl wählen.
-5. Aktualisierungsplan festlegen: alle 15, 30, 60 oder 180 Minuten oder bis zu sechs feste tägliche Uhrzeiten. Verwendet wird die Website-Zeitzone aus WordPress.
-6. Shortcode [kundenfunk] in eine Seite oder einen Shortcode-Block einsetzen. Einen neuen Kanalbeitrag prüfen und bei Bedarf „Jetzt synchronisieren“ wählen.
 
-== Darstellung ==
-Themes: WhatsApp, Hell, Dunkel, Magazin.
-Geräte-Skins: Ohne Rahmen, schwarzes Smartphone, silbernes Smartphone, iPad-Tablet.
-Layouts: Nachrichten, Karten, Kompakt.
-Optional pro Einbindung: [kundenfunk theme="dark" skin="iphone" layout="list" limit="6"]
-Der Kontomodus übernimmt das zentrale Design beim nächsten erfolgreichen Abruf. Im Plugin-Modus gelten die lokalen Einstellungen. Shortcode-Attribute überschreiben die Darstellung nur für die jeweilige Einbindung.
+1. Arrange a Kundenfunk service account for your exact HTTPS website address.
+2. Set your password using the personal invitation and activate your service license
+   in the Kundenfunk customer portal. Prepare the SIM, pair WhatsApp and verify the channel.
+3. Upload the plugin ZIP in Plugins > Add New > Upload Plugin and activate it.
+4. Create a website API key in the Kundenfunk portal. Open Settings > Kundenfunk,
+   enter the HTTPS service origin and API key, and click "Website verbinden".
+5. Choose the central account design or local presentation, and save the refresh plan.
+6. Place [kundenfunk] in a Shortcode block. Test a new real channel post on the published site.
 
-== Aktualisierungsplan ==
-Im Intervall-Modus wird ein wiederkehrender WP-Cron-Auftrag angelegt. Im Uhrzeiten-Modus wird jeweils der nächste einzelne Tagesauftrag in der WordPress-Zeitzone geplant; Sommerzeit wird berücksichtigt.
-WP-Cron wird durch Websitebesuche ausgelöst. Für pünktliche feste Zeiten einen echten Server-Cron einrichten:
-https://developer.wordpress.org/plugins/cron/hooking-wp-cron-into-the-system-task-scheduler/
-Der nächste geplante Zeitpunkt und der letzte erfolgreiche Abruf erscheinen in den Plugin-Einstellungen. Manuelles Synchronisieren ruft sofort ab und ändert den gespeicherten Zeitplan nicht.
-Seitencaches müssen beim Hook kundenfunk_feed_updated invalidiert werden. Ohne passende Cache-Konfiguration kann eine Seite länger einen älteren Stand zeigen.
+== Frequently Asked Questions ==
 
-== Externer Dienst und Daten ==
-Erst nach Einrichtung verbindet sich das Plugin mit der eingegebenen Kundenfunk-API. Der private API-Schlüssel wird ausschließlich serverseitig gespeichert; er ist weder Shortcode-Attribut noch Teil der öffentlichen Ausgabe.
-Der Dienst gehört zur Kundenfunk-Lizenz. Kundenfunk nutzt eine eigene SIM und gekoppelte WhatsApp-Verbindung; es ist kein offizielles Meta-API-Produkt.
-Aktuell werden Texte und Bildunterschriften übernommen. Medienanhänge bleiben im WhatsApp-Kanal. Vorhandene unterstützte Bild-URLs werden nur vom Kundenfunk-Server eingebunden.
-Dienstbedingungen und Datenverarbeitung erhält der Kunde vom Betreiber seiner Kundenfunk-Instanz.
+= Is the connector listed on WordPress.org? =
+Not yet. This ZIP is currently distributed from the Kundenfunk website and GitHub.
+Directory acceptance and the final slug are subject to WordPress.org review.
 
-== Betrieb und Grenzen ==
-Noch keine Veröffentlichung auf WordPress.org und kein automatischer Plugin-Updatekanal. Updates als neues ZIP über die WordPress-Pluginverwaltung einspielen.
-Bei bestätigter Zugangssperre wird der lokale Feed gelöscht; bei Netzfehlern gilt maximal 24 Stunden Fallback. Externe Seitencaches müssen dieselbe Grenze beachten.
-Deaktivierung entfernt den Cronjob. Lokale Inhalte und Konfiguration bleiben für die Wiederaufnahme bestehen. Für vollständige Entfernung zusätzlich die kf_* Optionen löschen und den Websitezugang zentral sperren.
+= Where do I put the license key? =
+Activate it in the Kundenfunk customer portal. The plugin uses a separate website
+API key; never put a key in a shortcode, public JavaScript or Git repository.
+
+= Can I override the design? =
+Use [kundenfunk theme="dark" skin="iphone" layout="list" limit="6"].
+Themes: classic, light, dark, editorial. Skins: none, iphone, android, ipad.
+Layouts: list, cards, compact. Limit: 1 to 12 posts.
+
+= What happens when access is denied or the service is unavailable? =
+Confirmed HTTP 401/403/404 responses clear the local feed. Temporary failures retain
+the last valid feed for at most 24 hours. External full-page caches must also be
+invalidated; integrations can use the kundenfunk_feed_updated action.
+
+= What happens when I deactivate or remove the plugin? =
+Deactivation removes its cron event but preserves configuration and cached content
+for reactivation. Full removal also requires deleting the kf_* options and the
+_kf_sync_lock option and revoking the website key in the Kundenfunk portal.
 
 == Changelog ==
-= 0.4.0 =
-* Visuelle Vorschau, Themes und Geräte-Skins.
-* Zentrales oder lokales Design und Shortcode-Varianten.
-* Wählbare Abrufintervalle und feste tägliche Uhrzeiten mit Website-Zeitzone.
-* Letzten und nächsten Abruf anzeigen; parallele Abrufe begrenzen.
 
-== License ==
-This plugin is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later version. It is distributed without any warranty.
-See https://www.gnu.org/licenses/gpl-2.0.html for the complete license text.
+= 0.4.1 =
+* Add service, request-consent and data-flow information and links to integration help.
+* Improve settings input sanitization and document safe preview output.
+* Add directory-compatible English readme, tested WordPress version and GPL text.
+
+= 0.4.0 =
+* Add theme/device previews, account/local design and shortcode options.
+* Add refresh intervals, daily schedules and last/next refresh status.
+* Bound concurrent requests and preserve existing connection credentials.
+
+== Upgrade Notice ==
+
+= 0.4.1 =
+Documentation and input/output review. Existing website keys and schedules remain valid.
+
+== Development ==
+
+Source: https://github.com/andreas0810/kundenfunk/tree/main/integrations/wordpress/kundenfunk
+Integration guide: https://kundenfunk.pages.dev/entwickler/
+Compatibility: https://kundenfunk.pages.dev/kompatibilitaet/
+Version history and ZIP updates: https://kundenfunk.pages.dev/versionen/
+There is no automatic plugin updater or WordPress.org distribution yet.

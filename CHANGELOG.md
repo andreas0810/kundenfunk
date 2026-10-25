@@ -1,5 +1,15 @@
 # Änderungen
 
+## 0.6.0 · 25.10.2026
+
+- Eigene WordPress-Pluginseite, Betreiberleitfaden und filterbare Kompatibilitätsübersicht.
+- Echte Laufzeitprüfungen, deklarierte Mindestversionen und ungeprüfte CMS-/Gerätekombinationen nachvollziehbar getrennt.
+- Plugin 0.4.1 mit englischer Verzeichnis-Readme, GPL-Text, Dienst-/Datenhinweisen und überarbeiteter Eingabeprüfung.
+- Offizieller WordPress Plugin Check, öffentliche GitHub-CI, Quellmanifest-, Seiten- und Linkprüfungen.
+- Beitrags-, Support- und Sicherheitsrichtlinien, Issue- und PR-Vorlagen.
+- Canonicals, Sitemap und Suchmaschinenhinweise für öffentliche Informationsseiten.
+- Einbettungspaket 0.6.0; bestehende Preise, Lizenzschlüssel und Widgetadressen bleiben gültig.
+
 ## 0.5.0 · 24.10.2026
 
 - Preise mit 19 EUR einmaliger Plugin-/Widget-Freischaltung je Website, gesonderter Einrichtung und monatlichem SIM-/Pflegebetrieb.

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private Sicherheitsmeldung
+    url: https://github.com/andreas0810/kundenfunk/security/advisories/new
+    about: Schwachstellen vertraulich melden.
+  - name: Einbauhilfe und Supportwege
+    url: https://github.com/andreas0810/kundenfunk/blob/main/SUPPORT.md
+    about: Private Kontoanfragen an die eigene Homepage-Betreuung richten.

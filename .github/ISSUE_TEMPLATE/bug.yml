@@ -1,0 +1,24 @@
+name: Softwarefehler
+description: Reproduzierbaren Fehler ohne private Kundendaten melden
+title: "Fehler: "
+body:
+  - type: checkboxes
+    attributes:
+      label: Vor dem Absenden
+      options:
+        - label: Ich veröffentliche keine Schlüssel, Kundendaten oder Kopplungslinks.
+          required: true
+        - label: Dies ist keine private Konto- oder Sicherheitsanfrage.
+          required: true
+  - type: textarea
+    attributes:
+      label: Versionen und Umgebung
+      description: Produkt, Plugin, WordPress, PHP, Browser und Einbauweg angeben.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Schritte und beobachtetes Verhalten
+      description: Mit synthetischen Daten beschreiben. Was sollte stattdessen geschehen?
+    validations:
+      required: true
