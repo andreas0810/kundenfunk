@@ -31,6 +31,40 @@ mit diesem Repository nicht ausgeliefert und durch diese Erklärung nicht unter
 die GPL gestellt. Fremder GPL-Code darf nicht ohne gesonderte Prüfung in den
 proprietären Backend-Code übernommen werden.
 
+## MIT: ursprüngliches Website-Widget und Eleventy-Loader
+
+Die aus `wa-channel-bridge` übernommenen Dateien `web/wa-channel-feed.js` und
+`web/eleventy-data/whatsapp-channel.js` stehen unter der MIT-Lizenz. Diese Rechte
+bleiben unabhängig von der späteren Archivierung und privaten Sichtbarkeit des
+ursprünglichen Repositorys bestehen. Für diese beiden Dateien gilt vollständig:
+
+```text
+MIT License
+
+Copyright (c) 2026 Andreas Trabi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+Bei Kopie dieser Dateien oder wesentlicher Teile muss dieser MIT-Text mit dem
+Urheberrechtshinweis erhalten bleiben. Kommerzielle Nutzung ist eingeschlossen.
+
 ## Einbau in Kundenwebsites und KI-Werkzeuge
 
 Die bereitgestellten HTML-/iframe-Einbaubeispiele und die Dateien unter

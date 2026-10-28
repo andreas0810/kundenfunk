@@ -133,3 +133,6 @@ GPL-Rechte an den ausgelieferten Dateien bleiben erhalten. Das Backend bleibt pr
 Die Einbaubeispiele und Embed-/Tabletvorlagen dürfen auch mit KI-Werkzeugen in
 eigene oder betreute Kundenwebsites integriert werden. Geltungsbereich, Pflichten
 und die Rechte an den übrigen Dateien stehen in [COPYRIGHT.md](COPYRIGHT.md).
+Das ursprüngliche Widget `web/wa-channel-feed.js` und der Eleventy-Loader
+`web/eleventy-data/whatsapp-channel.js` bleiben MIT-lizenziert; der vollständige
+MIT-Text samt Urheberhinweis steht ebenfalls in `COPYRIGHT.md`.
