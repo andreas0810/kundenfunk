@@ -123,6 +123,13 @@ und Betreiberverwaltung werden in einem separaten privaten Repository gepflegt.
 
 ## Lizenz
 
-Das WordPress-Plugin steht unter GPL-2.0-or-later, siehe dessen `readme.txt`.
-Die übrigen Dateien sind öffentlich einsehbar; eine allgemeine Open-Source-Lizenz
-wurde dafür bisher nicht erteilt. Siehe [COPYRIGHT.md](COPYRIGHT.md).
+Das WordPress-Plugin einschließlich seiner JavaScript-/CSS-Dateien und das gemeinsame
+Feed-Stylesheet `web/feed-themes.css` stehen unter **GPL-2.0-or-later**.
+Der vollständige Text liegt in [LICENSE-GPL-2.0.txt](LICENSE-GPL-2.0.txt) und im Plugin-ZIP.
+Kommerzielle Nutzung, Verkauf, Änderungen und Weitergabe sind gemäß GPL erlaubt.
+Kundenfunk berechnet die vereinbarten Leistungen des gehosteten Dienstes; die
+GPL-Rechte an den ausgelieferten Dateien bleiben erhalten. Das Backend bleibt privat.
+
+Die Einbaubeispiele und Embed-/Tabletvorlagen dürfen auch mit KI-Werkzeugen in
+eigene oder betreute Kundenwebsites integriert werden. Geltungsbereich, Pflichten
+und die Rechte an den übrigen Dateien stehen in [COPYRIGHT.md](COPYRIGHT.md).
